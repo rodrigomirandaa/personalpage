@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rodrigo Miranda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/rfavicon.png" type="image/x-icon">
     <!-- Links para os arquivos CSS e JS do Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -22,16 +23,16 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
+                <a class="nav-link" href="#sobre">Sobre</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfólio</a>
+                <a class="nav-link" href="#projetos">Projetos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
+                <a class="nav-link" href="#contato">Contato</a>
               </li>
             </ul>
           </div>
@@ -39,85 +40,164 @@
       </nav>
       
       <!--Landingpage-->
-      <div class="container">
-        <div class="row">
+      <section id="home">
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="imagens/landingpage.png" alt="minha Foto" style="border-radius: 50%;" class="img-fluid p-3">
+              </div>
+              <div class="col-md-6">
+                <br>
+                <br>
+                <br>
+                <h1>Olá, sou Rodrigo!</h1>
+                <br>
+                <ul>
+                    <li><h2 id="texto-animado">Sou Desenvolvedor web, </h2></li>
+                    <li><h2 id="texto-animado"> Analista de Inovação, </h2></li>
+                    <li><h2 id="texto-animado"> Customer Success </h1></li>
+                </ul>
 
-          <div class="col-md-6">
-            <img src="imagens/landingpage.png" alt="minha Foto" style="border-radius: 50%; class="img-fluid p-3">
-          </div>
-
-          <div class="col-md-6">
-            <br>
-            <br>
-            <br>
-            <h1>Olá, meu nome é</h1>
-            <br>
-            <h2>Rodrigo Miranda, sou desenvolvedor web</h2>
-          </div>
-
-        </div>
-      </div>
-      
-
-
-      <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-
-
-            </div>
-            <div class="col-md-6">
-                <img src="imagens/landingpage.png" alt="minha Foto" style="border-radius: 50%; class="img-fluid p-3">
-
-            </div>
-
-        </div>
-      </div>
-
-
-
-    <!-- Cards-->
-      <div class="container">
-        
-        <div class="row">
-      
-          <div class="col-md-4">
-            <div class="card">
-              <img src="projeto1.jpg" class="card-img-top" alt="Projeto 1">
-              <div class="card-body">
-                <h5 class="card-title">Projeto 1</h5>
-                <p class="card-text">Descrição breve do projeto 1.</p>
-                <a href="#" class="btn btn-primary">Ver mais</a>
               </div>
             </div>
           </div>
+      </section>
       
-          <div class="col-md-4">
-            <div class="card">
-              <img src="projeto2.jpg" class="card-img-top" alt="Projeto 2">
-              <div class="card-body">
-                <h5 class="card-title">Projeto 2</h5>
-                <p class="card-text">Descrição breve do projeto 2.</p>
-                <a href="#" class="btn btn-primary">Ver mais</a>
+
+      <!-- Sobre -->
+          <section id="sobre">
+              <div class="container my-5">
+                <div class="row">
+                    <hr>
+                    <br>
+                    <div class="col-md-8">
+                    <h1 class="text-center">Sobre mim</h1>
+                    <p>Sou o Rodrigo, tenho 22 anos e estou em processo de transição de carreira para desenvolvimento web. Trabalhei no movimento empresa júnior um ano e meio como consultor comercial, tive a oportunidade de me tornar gerente comercial, o que me proporcionou muitos aprendizados e experiências valiosas. Foi nesse período que percebi que queria seguir uma carreira no universo tech e, atualmente, trabalho no Porto Digital, onde venho aprimorando minhas habilidades em desenvolvimento web e aprendendo constantemente. Estou determinado em unir meus conhecimentos em tecnologia e negócios para me tornar um profissional completo e adaptável.</p>
+                    <div class="text-center">
+                        <button class="btn btn-outline-secondary rounded-pill py-2 px-4">
+                            <span class="fw-bold">Fale comigo</span>
+                        </button>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                        <img src="imagens/sobre.jpg" alt="minha Foto" style="border-radius: 2%;" class="img-fluid p-3">
+                    </div>
+                </div>
               </div>
+          </section>
+
+
+
+    <!-- Cards de projetos -->
+      <section id="projetos">
+
+        <div class="container">
+            <hr>
+          
+            <div class="row">
+            
+                
+                
+            <div class="text-center">
+                <h1> Meus projetos</h1>
+            </div>
+    
+          
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagens/glideapp.png" class="card-img-top" alt="Projeto 1">
+                  <div class="card-body">
+                    <h5 class="card-title">App Nocode</h5>
+                    <p class="card-text">Gestão financeira e de investimentos</p>
+                   
+                    <button class="btn btn-outline-secondary rounded-pill py-2 px-4">
+                        <span class="fw-bold">Ver mais</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagens/img300.png" class="card-img-top" alt="Projeto 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Projeto 2</h5>
+                    <p class="card-text">Descrição breve do projeto 2.</p>
+                   
+                    <button class="btn btn-outline-secondary rounded-pill py-2 px-4">
+                        <span class="fw-bold">Ver mais</span>
+                    </button>
+                      
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="imagens/img300.png" class="card-img-top" alt="Projeto 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Projeto 3</h5>
+                    <p class="card-text">Descrição breve do projeto 3.</p>
+                    <button class="btn btn-outline-secondary rounded-pill py-2 px-4">
+                        <span class="fw-bold">Ver mais</span>
+                    </button>
+                        
+                  </div>
+                </div>
+              </div>
+          
             </div>
           </div>
-      
-          <div class="col-md-4">
-            <div class="card">
-              <img src="projeto3.jpg" class="card-img-top" alt="Projeto 3">
-              <div class="card-body">
-                <h5 class="card-title">Projeto 3</h5>
-                <p class="card-text">Descrição breve do projeto 3.</p>
-                <a href="#" class="btn btn-primary">Ver mais</a>
-              </div>
+      </section>
+
+      <!--Contato-->
+      <section id="contato">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+                <hr>
+              <h1 class="text-center">Entre em contato</h1>
+              <form action="" method="POST">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label">Mensagem</label>
+                  <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button class="btn btn-outline-secondary rounded-pill py-2 px-4">
+                    <span class="fw-bold">Enviar</span>
+                </button>
+              </form>
             </div>
           </div>
-      
         </div>
-      </div>
+      </section>
       
 
+      <!--Footer-->
 
+      <footer class="jumbotron mt-9 text-center" style="background-color: #D3D3D3;">
+  
+        <div class="container">
+          <a href="https://www.linkedin.com/in/rodrigo-miranda-31769620a/" target="_blank"><img src="imagens/linkedinicon.png" alt="linkedinicon"></a>
+          <a href="https://github.com/rodrigomirandaa" target="_blank"><img src="imagens/githubicon.png" alt="githubicon"></a>
+          <a href="mailto:rod.mir@outlook.com" target="_blank"><img src="imagens/emailicon.png" alt="emailicon"></a>
+          <a href="https://www.instagram.com/_rodrigomirandaa/" target="_blank"><img src="imagens/instagramicon.png" alt="instagramicon"></a>
+          <a href="api.whatsapp.com/send/?phone=5581987126435&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/whatsappicon.png" alt="whatsappicon"></a>
+        </div>
+        <div>
+            <p>Recife, Pernambuco | Telefone: (81) 9 8712-6435</p>
+            <p>copyright © 2023 Rodrigo Miranda. Todos os direitos reservados</p>
+        </div>
+      </footer>
+
+
+      <script src="script.js"></script>
 </body>
 </html>
